@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block head %} 
+<title>Gallery</title>
+<link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/thumbnail-gallery.css') }}">
+<link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/baguetteBox.min.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container gallery-container" style="margin-top: 5% ;"> 
+    <h1>Christina's Gallery</h1>
+    <p class="page-description text-center">Explore my lifestyles & travel</p>
+    <div class="tz-gallery">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="static/image/secret.jpg">
+                        <img src="static/image/secret.jpg" alt="Secret Garden">
+                    </a>
+                    <div class="caption">
+                        <h3>Secret Garden, Vancouver</h3>
+                        <p>Secret Garden brought Monet's life to Vancouver Art Gallery. I spent an afternoon exploring amazing art works in Spring 2017.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="static/image/christmas.jpg">
+                        <img src="static/image/christmas.jpg" alt="Christmas Market">
+                    </a>
+                    <div class="caption">
+                        <h3>Christmas Market, Toronto</h3>
+                        <p>The magic of the Christmas season returned to Toronto. I celebrated Christmas Eve here with some of my best friends in Winter 2017. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="static/image/sea.jpg">
+                        <img src="static/image/sea.jpg" alt="Kitsilano Beach">
+                    </a>
+                    <div class="caption">
+                        <h3>Kitsilano Beach, Vancouver</h3>
+                        <p>Kitsilano Beach is one of the most popular beaches in Vancouver. I drove and enjoyed the beauty of nature in Summer 2018.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="static/image/china.jpg">
+                        <img src="static/image/china.jpg" alt="Luxun Guju">
+                    </a>
+                    <div class="caption">
+                        <h3>Luxun Guju, China</h3>
+                        <p>Lu Xun, a Chinese writer and poet. He was a leading figure of modern Chinese literature. I visited his hometown in Summer 2018.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="static/image/toronto.jpg">
+                        <img src="static/image/toronto.jpg" alt="Nathan Phillips">
+                    </a>
+                    <div class="caption">
+                        <h3>Nathan Phillips, Toronto</h3>
+                        <p>Nathan Phillips Square is a vibrant space in the heart of the City in Toronto. I live here for 4 years now, and this place feels like home.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="static/image/van.jpg">
+                        <img src="static/image/van.jpg" alt="Waterfront">
+                    </a>
+                    <div class="caption">
+                        <h3>Waterfront, Vancouver</h3>
+                        <p>Vancouver, a bustling west coast seaport in British Columbia. I moved back to Vancouver for half a year after graduation in Fall 2018. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container gallery-container1">
+
+    <p class="page-description text-center">Some milestones in my life</p>
+    
+    <div class="tz-gallery1">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="static/image/grad.jpeg">
+                    <img src="static/image/grad.jpeg" alt="Grad">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="static/image/award.jpeg">
+                    <img src="static/image/award.jpeg" alt="Award">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="static/image/grad1.jpeg">
+                    <img src="static/image/grad1.jpeg" alt="Grad photo">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container gallery-container">
+    <p class="page-description text-center">My certificates of completion</p>
+    <div class="row">
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="programming">Programming</button>
+            <button class="btn btn-default filter-button" data-filter="web">HTML/CSS/JS</button>
+            <button class="btn btn-default filter-button" data-filter="java">Java</button>
+            <button class="btn btn-default filter-button" data-filter="sql">SQL</button>
+            <button class="btn btn-default filter-button" data-filter="business">Business</button>
+        </div>
+        <br/>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter programming">
+            <img src="static/image/programming1.jpg" class="img-responsive">
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter programming">
+            <img src="static/image/programming2.jpg" class="img-responsive">
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter business">
+            <img src="static/image/business2.jpg" class="img-responsive">
+        </div>
+
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter java">
+            <img src="static/image/java1.jpg" class="img-responsive">
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter java">
+            <img src="static/image/java2.jpg" class="img-responsive">
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web">
+            <img src="static/image/css2.jpg" class="img-responsive">
+        </div>
+    
+
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web">
+            <img src="static/image/js.jpg" class="img-responsive">
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter business">
+            <img src="static/image/agile.jpg" class="img-responsive">
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter business">
+            <img src="static/image/business.jpg" class="img-responsive">
+        </div>
+
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web">
+            <img src="static/image/css1.jpg" class="img-responsive">
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web">
+            <img src="static/image/html.jpg" class="img-responsive">
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sql">
+            <img src="static/image/sql.jpg" class="img-responsive">
+        </div>
+    </div>
+</div>
+</section>
+{% endblock %}
+
+{% block script %} 
+<script type="text/javascript" src="{{ url_for('static', filename='js/baguetteBox.min.js') }}"></script>
+<script> baguetteBox.run('.tz-gallery'); </script>
+<script> baguetteBox.run('.tz-gallery1'); </script>
+<script>
+$(document).ready(function(){
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    if(value == "all") {
+        $('.filter').show('1000');
+    }
+    else {
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');}
+});
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+});</script>
+{% endblock %}

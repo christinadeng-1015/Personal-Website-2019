@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+
+{% block head %} 
+<title>Portfolio</title>
+{% endblock %}
+
+{% block content %}
+
+<section class="Grid"  style="margin-top: 15%;">
+    <div class="Grid-row"><a class="Card" onClick="openGallery(1)" id="card-1">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image " style="background-image: url(static/image/EV_20XX/EV.jpg);"></div>
+        </div>
+        <div class="Card-title"><span>Prototyping</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a><a class="Card" onClick="openGallery(2)" id="card-2">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image" style="background-image: url(static/image/web/oldweb.png);"></div>
+        </div>
+        <div class="Card-title"><span>Web Development</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a><a class="Card" onClick="openGallery(3)" id="card-3">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image" style="background-image: url(static/image/game/0.png);"></div>
+        </div>
+        <div class="Card-title"><span>Game Design</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a>
+    </div>
+    <div class="Grid-row"><a class="Card" onClick="openGallery(4)" id="card-4">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image" style="background-image: url(static/image/graphic/ski.png);"></div>
+        </div>
+        <div class="Card-title"><span>Graphics Design</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a><a class="Card" onClick="openGallery(5)" id="card-5">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image" style="background-image: url(static/image/puzzle/0.jpg);"></div>
+        </div>
+        <div class="Card-title"><span>Puzzle Solving</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a><a class="Card" onClick="openGallery(6)" id="card-6">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image" style="background-image: url(static/image/photo/1.jpeg);"></div>
+        </div>
+        <div class="Card-title"><span>Photography</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a>
+    </div>
+    <div class="Grid-row"><a class="Card" onClick="openGallery(7)" id="card-7">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image" style="background-image: url(static/image/data/0.jpg);"></div>
+        </div>
+        <div class="Card-title"><span>Data Science</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a><a class="Card" onClick="openGallery(8)" id="card-8">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image" style="background-image: url(static/image/math/0.jpg);"></div>
+        </div>
+        <div class="Card-title"><span>Mathematics</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a><a class="Card" onClick="openGallery(9)" id="card-9">
+        <div class="Card-thumb">
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-shadow"></div>
+          <div class="Card-image" style="background-image: url(static/image/finance/finance.jpg);"></div>
+        </div>
+        <div class="Card-title"><span>Financial Economics</span></div>
+        <div class="Card-explore"><span>Explore 50 more</span></div>
+        <button class="Card-button">view more</button></a>
+    </div>
+  </section>
+  <section class="Gallery" id="gallery-1">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/team.jpg);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/process.jpg);"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/EV_20XX/EV.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/map.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/product.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/area.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/painpoint.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/solution.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/valueprop.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/1st.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/2nd.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/EV_20XX/demo.jpg);"></div>
+    </div>
+  </section>
+  <section class="Gallery" id="gallery-2">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/web/ecar.png)"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/web/mir.png)"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/web/oldweb.png)"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/web/certificate.png)"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/web/skill.png)"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/web/contact.png)"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/web/vid.png)"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/web/map.png)"></div>
+      <div class="Gallery-image"style="background-image: url(static/image/web/footer.png)"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/web/onepage.png)"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/web/skill1.png)"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/web/award.png)"></div>
+    </div>
+  </section>
+  <section class="Gallery" id="gallery-3">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/game/1.jpg);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/game/2.jpg);"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/game/0.png);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/game/3.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/game/4.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/game/5.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/game/6.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/game/7.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/game/8.jpg);"></div>
+    </div>
+  </section>
+  <section class="Gallery" id="gallery-4">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/graphic/sport2.png);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/graphic/62min.png);"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/graphic/ski.png);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image"></div>
+      <div class="Gallery-image"></div>
+      <div class="Gallery-image"></div>
+    </div>
+    <div class="Gallery-images">
+        <div class="Gallery-image"></div>
+        <div class="Gallery-image"></div>
+        <div class="Gallery-image"></div>
+      </div>
+  </section>
+  <section class="Gallery" id="gallery-5">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/puzzle/1.jpg);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/puzzle/2.jpg);"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/puzzle/0.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/puzzle/3.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/puzzle/4.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/puzzle/5.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/puzzle/6.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/puzzle/7.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/puzzle/8.jpg);"></div>
+    </div>
+  </section>
+  <section class="Gallery" id="gallery-6">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/photo/2.jpeg);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/photo/3.jpeg);"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/photo/1.jpeg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/photo/4.jpeg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/photo/5.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/photo/6.jpeg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/photo/7.jpeg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/photo/8.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/photo/9.jpeg);"></div>
+    </div>
+  </section>
+  <section class="Gallery" id="gallery-7">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/data/1.jpg);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/data/2.jpg);"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/data/0.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/data/3.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/data/4.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/data/5.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/data/6.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/data/7.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/data/8.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/data/9.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/data/10.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/data/11.jpg);"></div>
+    </div>
+  </section>
+  <section class="Gallery" id="gallery-8">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/math/1.png);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/math/2.png);"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/math/0.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/math/3.png);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/math/4.png);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/math/5.png);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/math/6.png);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/math/7.png);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/math/8.png);"></div>
+    </div>
+  </section>
+  <section class="Gallery" id="gallery-9">
+    <div class="Gallery-header"><a class="Gallery-close" onclick="closeAll()">×</a></div>
+    <div class="Gallery-images">
+      <div class="Gallery-left">
+        <div class="Gallery-image" style="background-image: url(static/image/finance/0.jpg);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/finance/00.jpg);"></div>
+      </div>
+      <div class="Gallery-image Gallery-image--primary" style="background-image: url(static/image/finance/finance.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/finance/1.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/finance/2.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/finance/3.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+        <div class="Gallery-image" style="background-image: url(static/image/finance/4.jpg);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/finance/5.jpg);"></div>
+        <div class="Gallery-image" style="background-image: url(static/image/finance/6.jpg);"></div>
+    </div>
+    <div class="Gallery-images">
+      <div class="Gallery-image" style="background-image: url(static/image/finance/7.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/finance/8.jpg);"></div>
+      <div class="Gallery-image" style="background-image: url(static/image/finance/9.jpg);"></div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block script %} 
+<script>
+function openGallery(id) {
+    closeAll();
+    const gallery = document.getElementById('gallery-' + id);
+    const card = document.getElementById('card-' + id);
+    gallery.classList.add('Gallery--active');
+    card.classList.add('Card--active');
+  }
+  
+  function closeAll() {
+    const galleryActv = document.querySelector('.Gallery--active');
+    const cardActv = document.querySelector('.Card--active');
+    if (galleryActv) {
+      galleryActv.classList.remove('Gallery--active');
+    }
+    if (cardActv) {
+      cardActv.classList.remove('Card--active');
+    }
+  }
+</script>
+{% endblock%}

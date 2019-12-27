@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type=text/css href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/animate.css') }}" >
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" >
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" >
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/bootsnav.css') }}" >
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/responsive.css') }}" >
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    {% block head %} {% endblock %}
+</head>
+<body>
+    <header class="top-area">
+        <div class="header-area">
+            <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Christina Deng</a>
+                    </div>
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+
+    {% block content %} {% endblock %}
+
+    <footer id="footer-copyright" class="footer-copyright">
+        <div class="container">
+            <div class="hm-footer-copyright text-center">
+                <p>
+                    &copy; copyright Christina Deng 2019<br>
+                    All rights reserved.</a>
+                </p>
+            </div>
+        </div>
+        <section id="lab_social_icon_footer">
+            <div class="container">
+                <div class="text-center center-block">
+                        <a href="https://github.com/christinadeng-1015/" target="_blank"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+                        <a href="https://linkedin.com/in/christinadeng1015" target="_blank"><i id="social-ln" class="fa fa-linkedin-square fa-3x social"></i></a>
+                        <a href="https://www.instagram.com/christinadeng1015/" target="_blank"><i id="social-ins" class="fa fa-instagram fa-3x social"></i></a>
+                        <a href="mailto:christinadeng1015@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+            </div>
+        </section>
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" ></i>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootsnav.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/progressbar.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.appear.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    {% block script %} {% endblock %}
+</body>
+</html>
