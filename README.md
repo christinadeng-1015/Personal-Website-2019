@@ -1,6 +1,6 @@
 # PersonalWebsite
 
-Installation
+Installation\
 $ git clone https://github.com/christinadeng-1015/PersonalWebsite.git \
 $ cd PersonalWebsite\
 $ pip3 install virtualenv\
