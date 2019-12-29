@@ -2,7 +2,7 @@
 
 Installation\
 $ git clone https://github.com/christinadeng-1015/Personal-Website-2019.git \
-$ cd PersonalWebsite\
+$ cd Personal-Website-2019\
 $ pip3 install virtualenv\
 $ virtualenv env\
 $ source env/bin/activate
