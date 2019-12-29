@@ -1,7 +1,7 @@
 # PersonalWebsite
 
 Installation\
-$ git clone https://github.com/christinadeng-1015/PersonalWebsite.git \
+$ git clone https://github.com/christinadeng-1015/Personal-Website-2019.git \
 $ cd PersonalWebsite\
 $ pip3 install virtualenv\
 $ virtualenv env\
